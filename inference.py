@@ -17,7 +17,7 @@ model = AutoModelForCausalLM.from_pretrained(
     trust_remote_code=True  
 )
 
-lora_path = "." 
+lora_path = "GLM4-OpenR1" 
 model.load_adapter(lora_path)
 
 model.eval()
